@@ -110,7 +110,7 @@ type Page struct {
 
 iris.Config().Templates.Directory = "./yourpath/templates"
 
-iris.Use(logger.Logger())
+iris.Use(logger.DefaultHandler())
 
 iris.Get("/", func(c *iris.Context) {
 		c.Render("index.html", Page{"My Index Title"})
