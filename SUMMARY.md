@@ -1,21 +1,21 @@
 # Summary
 
 * [Introduction](README.md)
-  * [Why](why.md)
-
+    * [Why](why.md)
 * [Features](features.md)
 * [Versioning](versioning.md)
 * [Install](install.md)
 * [Hi](hi.md)
 * [Transport Layer Security](tls.md)
 * [Handlers](handlers.md)
-  * [Using Handlers](using-handlers.md)
-  * [Using HandlerFuncs](using-handlerfuncs.md)
-  * [Using custom struct for a complete API](using-handlerapi.md)
-  * [Using native http.Handler](using-native-httphandler.md)
-    * [Using native http.Handler via iris.ToHandlerFunc\(\)](using-native-httphandler-via-tohandlerfunc.md)
+    * [Using Handlers](using-handlers.md)
+    * [Using HandlerFuncs](using-handlerfuncs.md)
+    * [Using custom struct for a complete API](using-handlerapi.md)
+    * [Using native http.Handler](using-native-httphandler.md)
+        * [Using native http.Handler via iris.ToHandlerFunc\(\)](using-native-httphandler-via-tohandlerfunc.md)
+    * [Routing and reverse lookups](routing.md)
 
-
+-----
 * [Middleware](middleware.md)
 * [API](api.md)
 * [Declaration](declaration.md)
@@ -27,9 +27,8 @@
 * [Send files](send-files.md)
 * [Send e-mails](mail.md)
 * [Render](render.md)
-  * [Response Engines](response-engines.md)
-  * [Template Engines](template-engines.md)
-
+    * [Response Engines](response-engines.md)
+    * [Template Engines](template-engines.md)
 * [Gzip](gzip.md)
 * [Streaming](streaming.md)
 * [Cookies](cookies.md)
