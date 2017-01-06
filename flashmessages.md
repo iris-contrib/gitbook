@@ -47,7 +47,7 @@ func main() {
 	iris.Get("/get", func(ctx *iris.Context) {
 		name := ctx.Session().GetFlashString("name")
 		if name =="" {
-			c.Writef(err.Error())
+			c.Writef("name not found")
 			return
 		}
 		ctx.Writef("Hello %s", name)
