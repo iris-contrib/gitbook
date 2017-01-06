@@ -39,30 +39,30 @@ import (
 
 func main() {
 
-	iris.Get("/set", func(c *iris.Context) {
-		c.Session().SetFlash("name", "iris")
-		c.Session().Writef("Message set, is available for the next request")
+	iris.Get("/set", func(ctx *iris.Context) {
+		ctx.Session().SetFlash("name", "iris")
+		ctx.Writef("Message set, is available for the next request")
 	})
 
-	iris.Get("/get", func(c *iris.Context) {
-		name := c.Session().GetFlashString("name")
+	iris.Get("/get", func(ctx *iris.Context) {
+		name := ctx.Session().GetFlashString("name")
 		if name =="" {
 			c.Writef(err.Error())
 			return
 		}
-		c.Writef("Hello %s", name)
+		ctx.Writef("Hello %s", name)
 	})
 
-	iris.Get("/test", func(c *iris.Context) {
+	iris.Get("/test", func(ctx *iris.Context) {
 
-		name := c.Session().GetFlashString("name")
+		name := ctx.Session().GetFlashString("name")
 		if name =="" {
-			c.Writef("name not found")
+			ctx.Writef("name not found")
 			return
 		}
 
-		c.Writef("Ok you are comming from /set, the value of the name is %s", name)
-		c.Writef(", and again from the same context: %s", name)
+		ctx.Writef("Ok you are comming from /set, the value of the name is %s", name)
+		ctx.Writef(", and again from the same context: %s", name)
 
 	})
 
