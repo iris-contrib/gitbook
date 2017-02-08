@@ -146,7 +146,7 @@ func main() {
 	//iris.Config.Websocket.Headers["Access-Control-Allow-Origin"] = "*"
 
 	var myChatRoom = "room1"
-	iris.Websocket.OnConnection(func(c iris.WebsocketConnection) {
+	iris.Websocket.OnConnection(func(ctx iris.WebsocketConnection) {
 
 		ctx.Join(myChatRoom)
 
