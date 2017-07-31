@@ -3,7 +3,7 @@
 The only requirement is the [Go Programming Language](https://golang.org/dl), at least v1.7.
 
 ```sh
-$ go get -u github.com/kataras/iris/iris
+$ go get -u github.com/kataras/iris
 ```
 
 this will update the dependencies also.
@@ -13,7 +13,7 @@ this will update the dependencies also.
 
 1. [https:\/\/github.com\/northbright\/Notes\/blob\/master\/Golang\/china\/get-golang-packages-on-golang-org-in-china.md](https://github.com/northbright/Notes/blob/master/Golang/china/get-golang-packages-on-golang-org-in-china.md)
 
-1. `$ go get github.com/kataras/iris/iris` **without -u**
+1. `$ go get github.com/kataras/iris` **without -u**
 
 * If you have any problems installing Iris, just delete the directory `$GOPATH/src/github.com/kataras/iris` , open your shell and run `go get -u github.com/kataras/iris/iris` .
 
